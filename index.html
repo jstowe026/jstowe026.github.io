@@ -1,44 +1,55 @@
 <!DOCTYPE html>
+
+<!-- CSS Stylesheets with Relative Paths -->
+
 <html lang="en-us">
 <head>
   <meta charset="UTF-8">
-  <title>Jenna's GitHub Page</title>
-</head>
+  <title>CSS Stylesheets with Relative Paths</title>
 
-<style>
-  h1{
-      margin-bottom: 15px;
-      font-size: 48px;
-      color:darkolivegreen
-      background-color:white
-      text-decoration: underline;
-      text-align: center;
-  }
-  </style>
-
-<head>
-  <h1>Jenna Nytes</h1>
+  <!-- This line is money! It points your HTML to the CSS file. -->
+  <!-- Notice the "relative" pathway? It matches a file inside our current directory's "assets" folder. Open it to see our style rules. -->
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-  
-<hr>
 
 <body>
-  <img src = "https://media-exp1.licdn.com/dms/image/C4E03AQFOK1h4Q-IpoQ/profile-displayphoto-shrink_200_200/0?e=1587600000&v=beta&t=xxv2cYmgCbz_5feCEzbF7vbAPNxsf3omhkVqSJUaYLM" alt ="Me"/>
-  
-  <p>My name is Jenna Nytes.  I live in Richfield with my family.
-  </p>
 
-  <p> I currently work for M Health Fairview as a Data Analyst within the Quality and Patient Safety department.  Some of the main
-    reporting that I do is related to inpatient mortality and patient safety indiciators.  I am also the resident subject matter expert 
-    for a quality reporting tool called Vizient.
-  </p>
+  <header>
+    <h1>Bio</h1>
+  </header>
 
-  <p> In my free time I like cooking and baking as well as reading.  In the summer, I love going to my family's cabin on Lake Minnewaska
-    in Starbuck, Minnesota where I enjoy boating on beautiful sunny days.
-  </p>
+  <main class="container">
+    <section id="main-bio">
+      <section id="figure">
+        <h3 id="bio-name">Jenna Nytes</h3>
+        <img id="bio-image" src="https://media-exp1.licdn.com/dms/image/C4E03AQFOK1h4Q-IpoQ/profile-displayphoto-shrink_200_200/0?e=1587600000&v=beta&t=xxv2cYmgCbz_5feCEzbF7vbAPNxsf3omhkVqSJUaYLM" alt="Your Name">
+      </section>
+      <p>My name is Jenna Nytes. I currently work for M Health Fairview as a Data Analyst within the Quality and Patient Safety department.  Some of the main
+        reporting that I do is related to inpatient mortality and patient safety indiciators.  I am also the resident subject matter expert 
+        for a quality reporting tool called Vizient.  </p>
+        
+        <p>In my free time I like cooking and baking as well as reading.  In the summer, I love going to my family's cabin on Lake Minnewaska
+        in Starbuck, Minnesota where I enjoy boating on beautiful sunny days.</p>
 
-  <a href =
-    
+        <hr>
+        <h2>Portfolio</h2>
+        <ul>
+          <li><a href="https://github.com/jstowe026/Web-Design_Challenge/tree/master/WebVisualizations"> Data Analytics Boot Camp Web Design Homework</a></li>
+        </ul>
+    </section>
+
+      
+    </section>
+
+    <aside id="contact-info">
+      <h2>Contact Info</h2>
+      <ul>
+        <li><strong>Email:</strong> <a href="#">jstowe026@gmail.com</a></li>
+        <li><strong>Github:</strong> <a href="https://github.com/jstowe026">jstowe026</a></li>
+        <li><strong>LinkedIn</strong><a href ="https://www.linkedin.com/in/jenna-nytes-62158140/">Jenna Nytes</a></li>
+      </ul>
+    </aside>
+  </main>
 
 </body>
 
